@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import { fonts } from "./Theme";
 
-export const GlobalStyle = styled.GlobalStyleComponent`
+export default createGlobalStyle`
   html, body, #root {
     height: 100%;
   }
@@ -8,7 +9,7 @@ export const GlobalStyle = styled.GlobalStyleComponent`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: ${fonts.source};
   }
   body {
     font-size: 100%;
