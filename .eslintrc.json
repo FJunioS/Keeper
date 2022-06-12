@@ -6,12 +6,15 @@
   },
   "extends": [
     "eslint:recommended",
+    "typescript:recommended",
     "plugin:react/recommended",
-    "eslint:prettier"
+    "eslint:prettier",
+    "eslint-config-prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "modules": true
     },
     "ecmaVersion": "latest",
     "sourceType": "module"
